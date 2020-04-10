@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Logout">
+
+    </Button>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_logout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_floating_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Camera"
+            app:fab_size="mini"
+            android:src="@drawable/ic_add_a_photo_black_24dp"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_floating_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Gallery"
+            app:fab_size="mini"
+            android:src="@drawable/ic_photo_library_black_24dp"/>
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</RelativeLayout>
